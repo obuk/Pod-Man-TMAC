@@ -55,7 +55,18 @@
       }
    },
    "release_status" : "unstable",
-   "version" : "0.01",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/obuk/Pod-Man-TMAC/issues"
+      },
+      "homepage" : "https://github.com/obuk/Pod-Man-TMAC",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/obuk/Pod-Man-TMAC.git",
+         "web" : "https://github.com/obuk/Pod-Man-TMAC"
+      }
+   },
+   "version" : "0.02",
    "x_serialization_backend" : "JSON::PP version 4.02",
    "x_static_install" : 1
 }
