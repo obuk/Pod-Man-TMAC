@@ -4,13 +4,13 @@
       "KUBO, Koichi <k@obuk.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v3.1.9, CPAN::Meta::Converter version 2.150010",
+   "generated_by" : "Minilla/v3.1.10, CPAN::Meta::Converter version 2.143240",
    "license" : [
       "perl_5"
    ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-      "version" : 2
+      "version" : "2"
    },
    "name" : "Pod-Man-TMAC",
    "no_index" : {
@@ -66,7 +66,6 @@
          "web" : "https://github.com/obuk/Pod-Man-TMAC"
       }
    },
-   "version" : "0.02",
-   "x_serialization_backend" : "JSON::PP version 4.02",
+   "version" : "0.03",
    "x_static_install" : 1
 }

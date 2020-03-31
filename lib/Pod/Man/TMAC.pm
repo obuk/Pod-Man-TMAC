@@ -3,7 +3,7 @@ use 5.008001;
 use strict;
 use warnings;
 
-our $VERSION = "0.02";
+our $VERSION = "0.03";
 
 use parent qw(Pod::Man);
 use File::Spec;
@@ -27,7 +27,7 @@ for my $subname (qw/utf8 section name no_default_preamble search_path add_preamb
 }
 
 sub _list {
-  map split(/[,;]/), map { ref ? @{$_} : $_ } grep defined, @_;
+  map split(/[,;]/), map { ref($_) ? @{$_} : $_ } grep defined, @_;
 }
 
 
