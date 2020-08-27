@@ -3,14 +3,15 @@ use 5.008001;
 use strict;
 use warnings;
 
-our $VERSION = "0.03";
+our $VERSION = "0.04";
 
 use parent qw(Pod::Man);
 use File::Spec;
 use Slurp;
 
 BEGIN {
-  my $parent = \&Pod::Perldoc::DEBUG if defined &Pod::Simple::DEBUG;
+  my $parent = \&Pod::Man::DEBUG if defined &Pod::Man::DEBUG;
+  $parent ||= \&Pod::Perldoc::DEBUG if defined &Pod::Perldoc::DEBUG;
   unless (defined &DEBUG) {
     *DEBUG = $parent || sub () { 10 };
   }
